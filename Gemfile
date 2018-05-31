@@ -39,6 +39,24 @@ gem 'devise'
 
 gem 'dotenv-rails'
 
+# cache 相关
+gem 'redis'
+gem 'redis-rails'
+gem 'second_level_cache', '~> 2.3.0'
+gem 'resque', github: 'resque/resque'
+
+# view 相关
+gem 'haml'
+gem 'sass-rails', '~> 5.0'
+gem 'coffee-rails', '~> 4.2'
+gem 'turbolinks', '~> 5'
+
+# 图片处理
+gem 'carrierwave'
+gem 'carrierwave-upyun'
+gem 'mini_magick'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
