@@ -2,6 +2,7 @@
   activerecord:
     models:
       admin_user: "管理员"
+      user: '用户'
     attributes:
       admin_user:
         email: "邮箱"
@@ -12,6 +13,16 @@
         created_at: "注册时间"
         password: "密码"
         password_confirmation: "确认密码"
+      user:
+        user_name: '用户名'
+        nick_name: '昵称'
+        avatar: '头像'
+        mobile: '手机号'
+        email: '邮箱'
+        signature: '签名'
+        last_visit: '上次登录时间'
+        reg_date: '注册日期'
+        mark: '备注'
       format: "%{attribute}%{message}"
       messages:
         blank: '不能为空'
