@@ -1,6 +1,6 @@
 TRANS_TOPIC_STATUSES = Topic.statuses.keys.collect { |d| [I18n.t("status.#{d}"), d] }
 ActiveAdmin.register Topic do
-  menu priority: 5
+  menu priority: 10
   actions :all, except: [:new, :create, :edit, :update, :destroy]
 
   filter :title
