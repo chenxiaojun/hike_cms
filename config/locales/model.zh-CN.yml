@@ -3,6 +3,8 @@
     models:
       admin_user: "管理员"
       user: '用户'
+      topic: '说说长帖'
+      sms_log: '短信日志'
     attributes:
       admin_user:
         email: "邮箱"
@@ -23,6 +25,33 @@
         last_visit: '上次登录时间'
         reg_date: '注册日期'
         mark: '备注'
+      topic:
+        user: '用户'
+        title: '标题'
+        body: '内容'
+        body_type: '类型'
+        address_title: '地址'
+        total_views: '浏览量'
+        likes_count: '点赞量'
+        total_comments: '评论数'
+        reports_count: '举报数'
+        status: '状态'
+        excellent: '是否精选'
+        cover_link: '封面'
+        page_views: '浏览量(真实)'
+        view_increment: '浏览量(增量)'
+        created_at: '创建时间'
+        updated_at: '修改时间'
+      sms_log:
+        mobile: '手机号'
+        content: '短信内容'
+        error_msg: '返回信息'
+        fee: '计费次数'
+        send_time: '发送时间'
+        arrival_time: '到达时间'
+        created_at: '创建时间'
+        updated_at: "修改时间"
+        status: '发送状态'
       format: "%{attribute}%{message}"
       messages:
         blank: '不能为空'

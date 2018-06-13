@@ -3,6 +3,19 @@
     blank_slate:
       link: ""
     empty: "空"
+  excellent: '加入精选'
+  unexcellent: '取消精选'
+  body_type:
+    long: '长帖'
+    short: '说说'
+  status:
+    pending: '审核中'
+    passed: '审核通过'
+    failed: '审核失败'
+  publish: "发布"
+  unpublish: "取消发布"
+  publish_notice: "发布成功"
+  unpublish_notice: "取消发布成功"
   time:
     formats:
       long: "%Y-%m-%d %H:%M:%S"
