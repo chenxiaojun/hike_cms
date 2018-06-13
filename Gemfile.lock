@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/ankane/groupdate.git
+  revision: f4ae0040444b4a14c2c8ca510a15849ee4945398
+  specs:
+    groupdate (4.0.1)
+      activesupport (>= 4.2)
+
+GIT
   remote: https://github.com/resque/resque.git
   revision: 1d85f7c705ee8a609531c29035f8cf7cc6d67b19
   specs:
@@ -10,7 +17,7 @@ GIT
       vegas (~> 0.1.2)
 
 GEM
-  remote: https://rubygems.org/
+  remote: https://gems.ruby-china.org/
   specs:
     action-store (0.3.3)
       rails (~> 5)
@@ -111,6 +118,7 @@ GEM
     carrierwave-upyun (0.2.2)
       carrierwave (>= 0.5.7)
       faraday (>= 0.8.0)
+    chartkick (2.3.4)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     coffee-rails (4.2.2)
@@ -346,10 +354,12 @@ DEPENDENCIES
   capybara (~> 2.13)
   carrierwave
   carrierwave-upyun
+  chartkick
   coffee-rails (~> 4.2)
   devise
   dotenv-rails
   geocoder
+  groupdate!
   haml
   listen (>= 3.0.5, < 3.2)
   mini_magick
