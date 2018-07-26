@@ -16,6 +16,12 @@
   unpublish: "取消发布"
   publish_notice: "发布成功"
   unpublish_notice: "取消发布成功"
+  activity_status:
+    canceled: '已取消'
+    overload: '已满员'
+    applying: '报名中'
+    finished: '已结束'
+    doing: '进行中'
   time:
     formats:
       long: "%Y-%m-%d %H:%M:%S"

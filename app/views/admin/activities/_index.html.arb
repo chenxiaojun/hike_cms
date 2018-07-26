@@ -8,14 +8,17 @@ context.instance_eval do
   end
   column :name, sortable: false
   column :departure_city, sortable: false do |resource|
-    "#{resource.departure_province} #{resource.departure_city}"
+    "#{resource.departure_city}"
   end
   column :destination, sortable: false do |resource|
-    "#{resource.destination_province} #{resource.destination_city} #{resource.destination}"
+    "#{resource.destination_city} #{resource.destination}"
   end
   column :start_date
   column :end_date
   column :mem_limit
+  column :activity_status, sortable: false do |resource|
+    I18n.t("activity_status.#{resource.activity_status}")
+  end
   column :description, sortable: false do |resource|
     resource.description&.truncate(60)
   end

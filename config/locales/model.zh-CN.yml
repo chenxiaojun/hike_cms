@@ -67,6 +67,7 @@
         description: '活动描述'
         created_at: '创建时间'
         updated_at: "修改时间"
+        activity_status: '活动状态'
       format: "%{attribute}%{message}"
       messages:
         blank: '不能为空'
