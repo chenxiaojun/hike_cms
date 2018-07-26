@@ -5,6 +5,7 @@
       user: '用户'
       topic: '说说长帖'
       sms_log: '短信日志'
+      activity: '活动'
     attributes:
       admin_user:
         email: "邮箱"
@@ -52,6 +53,20 @@
         created_at: '创建时间'
         updated_at: "修改时间"
         status: '发送状态'
+      activity:
+        cover_link: '封面'
+        name: '活动标题'
+        departure_province: '出发省份'
+        departure_city: '出发城市'
+        destination_province: '目的省份'
+        destination_city: '目的城市'
+        destination: '目的地'
+        start_date: '开始时间'
+        end_date: '结束时间'
+        mem_limit: '人数限制'
+        description: '活动描述'
+        created_at: '创建时间'
+        updated_at: "修改时间"
       format: "%{attribute}%{message}"
       messages:
         blank: '不能为空'
