@@ -54,6 +54,7 @@
         updated_at: "修改时间"
         status: '发送状态'
       activity:
+        user: '用户'
         cover_link: '封面'
         name: '活动标题'
         departure_province: '出发省份'
@@ -64,7 +65,7 @@
         begin_time: '开始时间'
         end_time: '结束时间'
         mem_limit: '人数限制'
-        description: '活动描述'
+        join_numbers: '报名人数'
         created_at: '创建时间'
         updated_at: "修改时间"
         activity_status: '活动状态'

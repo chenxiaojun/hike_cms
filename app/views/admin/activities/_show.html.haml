@@ -1,0 +1,17 @@
+- user = resource.user
+%div.activity-container
+  %div.person
+    %div
+      = avatar(user.avatar_path, size: 80)
+    %div
+      %h3{ style: 'margin-left: 15px' }= user.nick_name
+      %p= resource.created_at.strftime("%F %T")
+  %div
+    %div
+      %span= resource.name
+    %div
+      %span= resource.begin_time.strftime("%F %T")
+      %span  ~
+      %span= resource.end_time.strftime("%F %T")
+  %div{style: 'margin-top: 30px'}
+    %div= sanitize(body_filter_nbsp resource.description)

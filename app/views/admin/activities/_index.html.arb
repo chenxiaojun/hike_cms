@@ -16,11 +16,12 @@ context.instance_eval do
   column :begin_time
   column :end_time
   column :mem_limit
+  column :join_numbers
   column :activity_status, sortable: false do |resource|
     I18n.t("activity_status.#{resource.activity_status}")
   end
   column :description, sortable: false do |resource|
-    resource.description&.truncate(60)
+    strip_tags(resource.description)&.truncate(60)
   end
   column :created_at
   actions name: '操作', defaults: false do |topic|
