@@ -13,8 +13,8 @@ context.instance_eval do
   column :destination, sortable: false do |resource|
     "#{resource.destination_city} #{resource.destination}"
   end
-  column :start_date
-  column :end_date
+  column :begin_time
+  column :end_time
   column :mem_limit
   column :activity_status, sortable: false do |resource|
     I18n.t("activity_status.#{resource.activity_status}")
