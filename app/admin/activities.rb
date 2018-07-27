@@ -10,4 +10,8 @@ ActiveAdmin.register Activity do
   index do
     render 'index', context: self
   end
+
+  show do
+    render 'show'
+  end
 end
