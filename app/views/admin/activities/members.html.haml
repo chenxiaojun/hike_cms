@@ -1,0 +1,21 @@
+%div
+  %table.index_table
+    %thead
+      %tr
+        %th 头像
+        %th 昵称
+        %th 性别
+        %th 报名时间
+        %th 是否通过
+        %th 发起者
+    %tbody
+      - @members.each do |member|
+        %tr
+          %td= avatar_profile(member.user, size: 60)
+          %td= member.user.nick_name
+          %td= member.user.gender.zero? ? '男' : '女'
+          %td= member.created_at
+          %td= I18n.t("status.#{member.join_status}")
+          %td= member.owner ? '是' : '不是'
+  %div.index_foot
+    = paginate(@members, remote: true)

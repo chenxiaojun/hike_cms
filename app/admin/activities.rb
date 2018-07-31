@@ -14,4 +14,9 @@ ActiveAdmin.register Activity do
   show do
     render 'show'
   end
+
+  member_action :members, method: :get do
+    @page_title = "报名列表(已通过: #{resource.join_numbers})"
+    @members = resource.activity_joins.page(params[:page])
+  end
 end
