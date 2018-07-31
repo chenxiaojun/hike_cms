@@ -41,7 +41,10 @@
         %span= link_to resource.followers_count, followers_admin_user_path(resource)
       %span
         %span 话题
-        %span= link_to resource.topics.count, admin_topics_path(q: { user_id_eq: resource.id })
+        %span= link_to resource.topics_count, admin_topics_path(q: { user_id_eq: resource.id })
+      %span
+        %span 活动
+        %span= link_to resource.activities_count, admin_activities_path(q: { user_id_eq: resource.id })
   %div.bottom
     %div.dynamics
   -#    %span

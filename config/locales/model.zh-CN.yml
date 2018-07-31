@@ -26,6 +26,8 @@
         last_visit: '上次登录时间'
         reg_date: '注册日期'
         mark: '备注'
+        topics_count: '话题数'
+        activities_count: '活动数'
       topic:
         user: '用户'
         title: '标题'
