@@ -6,6 +6,7 @@
       topic: '说说长帖'
       sms_log: '短信日志'
       activity: '活动'
+      banner: '首页Banner'
     attributes:
       admin_user:
         email: "邮箱"
@@ -71,6 +72,9 @@
         created_at: '创建时间'
         updated_at: "修改时间"
         activity_status: '活动状态'
+      banner:
+        target_type: '类型'
+        target_name: '名称'
       format: "%{attribute}%{message}"
       messages:
         blank: '不能为空'

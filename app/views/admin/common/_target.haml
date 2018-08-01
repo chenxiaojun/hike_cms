@@ -1,0 +1,22 @@
+%div.targets
+  %div.activities.hidden
+    %form{class: 'search_activities_form left', action: admin_activities_path(format: :json, per_page: 10), data: { remote: true }}
+      %input{name: 'q[name_contains]', type: 'search', id: 'input_search_activities'}
+      %input{name: 'submit', type: 'submit', value: '搜索', id: 'btn_search_activities'}
+    %table
+      %thead
+        %tr
+          %th 活动ID
+          %th 活动标题
+      %tbody
+
+  %div.topics.hidden
+    %form{class: 'search_topics_form left', action: admin_topics_path(format: :json, per_page: 10), data: { remote: true }}
+      %input{name: 'q[title_contains]', type: 'search', id: 'input_search_topics'}
+      %input{name: 'submit', type: 'submit', value: '搜索', id: 'btn_search_topics'}
+    %table
+      %thead
+        %tr
+          %th 长帖ID
+          %th 长帖标题
+      %tbody

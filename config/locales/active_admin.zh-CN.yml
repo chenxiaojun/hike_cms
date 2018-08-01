@@ -22,6 +22,9 @@
     applying: '报名中'
     finished: '已结束'
     doing: '进行中'
+  banner:
+    Activity: '活动'
+    Topic: '长帖'
   time:
     formats:
       long: "%Y-%m-%d %H:%M:%S"
